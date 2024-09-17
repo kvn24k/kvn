@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grande Aventura da Dora e o Livro Mágico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>A Grande Aventura da Dora e o Livro Mágico</h1>
+    <div id="content">
+        <div id="page1" class="page">
+            <p>Dora encontrou um antigo livro mágico enquanto explorava uma biblioteca antiga. O livro estava coberto de poeira e tinha um brilho misterioso. Quando Dora o abriu, três páginas se destacaram, cada uma levando a um destino diferente. O livro prometia revelar o segredo do "Coração do Mundo", um artefato lendário que concedia sabedoria e poder. Determinada a encontrar o artefato, Dora decidiu seguir as pistas.</p>
+            <button onclick="showPage('caminhoA')">Caminho A: Enigma das Árvores Falantes</button>
+            <button onclick="showPage('caminhoB')">Caminho B: Desafio dos Animais Mágicos</button>
+        </div>
+
+        <div id="caminhoA" class="page" style="display:none;">
+            <h2> Enigma das Árvores Falantes</h2>
+            <p>Dora entra na floresta e logo encontra árvores falantes que propõem uma série de enigmas e charadas. Cada árvore fornece uma pista sobre a localização de um fragmento do mapa. Dora deve:</p>
+            <button onclick="showPage('subcaminho1A')">Subcaminho 1A: Desafio do Enigma das Quatro Estações</button>
+            <button onclick="showPage('subcaminho2A')">Subcaminho 2A: O Jogo dos Animais Mágicos</button>
+        </div>
+
+        <div id="subcaminho1A" class="page" style="display:none;">
+            <h3>Subcaminho 1A: Desafio do Enigma das Quatro Estações</h3>
+            <p>As árvores falantes pedem que Dora resolva um enigma baseado nas quatro estações do ano. Ao resolver o enigma, Dora recebe uma chave mágica que abre um baú escondido na floresta. Dentro do baú, ela encontra um fragmento do mapa que aponta para a Cidade Submersa ou a Montanha do Tempo.</p>
+            <button onclick="showPage('cidadeSubmersa')">Cidade Submersa</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="subcaminho2A" class="page" style="display:none;">
+            <h3>Subcaminho 2A: O Jogo dos Animais Mágicos</h3>
+            <p>Os animais da floresta organizam uma competição de habilidades. Dora precisa mostrar suas habilidades resolvendo charadas e desafios físicos. Após vencer, ela recebe um amuleto que revela um fragmento do mapa, direcionando-a para a Cidade Submersa ou a Montanha do Tempo.</p>
+            <button onclick="showPage('cidadeSubmersa')">Cidade Submersa</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="caminhoB" class="page" style="display:none;">
+            <h2>Caminho B: Desafio dos Animais Mágicos</h2>
+            <p>Dora segue um caminho que leva a uma série de desafios propostos por animais mágicos. Cada desafio é uma prova de inteligência e coragem. Dora deve:</p>
+            <button onclick="showPage('subcaminho1B')">Subcaminho 1B: Corrida dos Guardiões da Floresta</button>
+            <button onclick="showPage('subcaminho2B')">Subcaminho 2B: Puzzles dos Portais</button>
+        </div>
+
+        <div id="subcaminho1B" class="page" style="display:none;">
+            <h3>Subcaminho 1B: Corrida dos Guardiões da Floresta</h3>
+            <p>Dora participa de uma corrida mágica onde deve usar sua astúcia para superar obstáculos naturais e resolver quebra-cabeças enquanto avança. Ao vencer a corrida, ela recebe um fragmento do mapa que mostra a direção para a Cidade Submersa ou a Montanha do Tempo.</p>
+            <button onclick="showPage('cidadeSubmersa')">Cidade Submersa</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="subcaminho2B" class="page" style="display:none;">
+            <h3>Subcaminho 2B: Puzzles dos Portais</h3>
+            <p>Dora encontra portais mágicos que transportam para diferentes locais da floresta. Cada portal contém um quebra-cabeça que, ao ser resolvido, fornece uma pista para o próximo fragmento do mapa. O fragmento indica se ela deve ir para a Cidade Submersa ou a Montanha do Tempo.</p>
+            <button onclick="showPage('cidadeSubmersa')">Cidade Submersa</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="cidadeSubmersa" class="page" style="display:none;">
+            <h2>Página 2: Cidade Submersa</h2>
+            <p>Se Dora escolhe seguir o mapa da Cidade Submersa, ela deve decidir entre dois desafios subaquáticos:</p>
+            <button onclick="showPage('subcaminho1Cidade')">Caminho A: Labirinto de Corais</button>
+            <button onclick="showPage('subcaminho2Cidade')">Caminho B: Ruínas dos Antigos</button>
+        </div>
+
+        <div id="subcaminho1Cidade" class="page" style="display:none;">
+            <h3>Caminho A: Labirinto de Corais</h3>
+            <p>Dora explora um labirinto subaquático repleto de corais e criaturas marinhas. Ela deve superar desafios aquáticos e encontrar um cristal mágico que revela uma saída secreta. Ao final do labirinto:</p>
+            <button onclick="showPage('enigmaLabirinto')">A Chave do Labirinto</button>
+            <button onclick="showPage('portalTempo')">O Portal do Tempo</button>
+        </div>
+
+        <div id="subcaminho2Cidade" class="page" style="display:none;">
+            <h3>Caminho B: Ruínas dos Antigos</h3>
+            <p>Dora explora as ruínas submersas e deve resolver quebra-cabeças antigos para encontrar um artefato mágico. Ela deve:</p>
+            <button onclick="showPage('rodaDestinos')">A Roda dos Destinos</button>
+            <button onclick="showPage('cofreSegredos')">O Cofre dos Segredos</button>
+        </div>
+
+        <div id="enigmaLabirinto" class="page" style="display:none;">
+            <h4>A Chave do Labirinto</h4>
+            <p>O cristal mágico revela uma chave escondida que desbloqueia um esconderijo subaquático com um fragmento do mapa, apontando para a Floresta Encantada ou a Montanha do Tempo.</p>
+            <button onclick="showPage('florestaEncantada')">Floresta Encantada</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="portalTempo" class="page" style="display:none;">
+            <h4>O Portal do Tempo</h4>
+            <p>O labirinto contém um portal que leva a uma área secreta onde Dora encontra um artefato que revela uma nova pista para o próximo destino, que pode ser a Floresta Encantada ou a Montanha do Tempo.</p>
+            <button onclick="showPage('florestaEncantada')">Floresta Encantada</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="rodaDestinos" class="page" style="display:none;">
+            <h4>A Roda dos Destinos</h4>
+            <p>Dora ativa uma roda mágica que revela uma série de pistas e desafios. Após superar todos os desafios, ela encontra um fragmento do mapa que indica o próximo destino.</p>
+            <button onclick="showPage('florestaEncantada')">Floresta Encantada</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="cofreSegredos" class="page" style="display:none;">
+            <h4>O Cofre dos Segredos</h4>
+            <p>Dora encontra um cofre escondido nas ruínas. Para abri-lo, deve resolver um enigma complexo. Dentro do cofre, ela encontra uma chave e um fragmento do mapa que revela o caminho para a Floresta Encantada ou a Montanha do Tempo.</p>
+            <button onclick="showPage('florestaEncantada')">Floresta Encantada</button>
+            <button onclick="showPage('montanhaTempo')">Montanha do Tempo</button>
+        </div>
+
+        <div id="montanhaTempo" class="page" style="display:none;">
+            <h2>Página 3: Montanha do Tempo</h2>
+            <p>Se Dora escolhe seguir o mapa da Montanha do Tempo, ela deve enfrentar desafios baseados em tempo e espaço:</p>
+            <button onclick="showPage('subcaminho1A')">Caminho A: Quebra-Cabeças Temporais</button>
+            <button onclick="showPage('subcaminho2A')">Caminho B: Caverna dos Ecos</button>
+        </div>
+
+        <div id="subcaminho1A" class="page" style="display:none;">
+            <h3>Caminho A: Quebra-Cabeças Temporais</h3>
+            <p>Dora enfrenta desafios que envolvem manipulação do tempo. Ela deve resolver quebra-cabeças que mudam constantemente. Ao resolver todos os desafios:</p>
+            <button onclick="showPage('cavernaTempo')">A Caverna do Tempo</button>
+            <button onclick="showPage('relogioDestinos')">O Relógio dos Destinos</button>
+        </div>
+
+        <div id="cavernaTempo" class="page" style="display:none;">
+            <h4>A Caverna do Tempo</h4>
+            <p>Dora encontra uma caverna secreta onde o Coração do Mundo está escondido. Com o artefato, ela aprende que a verdadeira sabedoria está em sua jornada e nas experiências vividas.</p>
+        </div>
+
+        <div id="relogioDestinos" class="page" style="display:none;">
+            <h4>O Relógio dos Destinos</h4>
+            <p>Dora descobre um grande relógio mágico que controla o fluxo do tempo. Ao ajustar o relógio corretamente, ela encontra uma passagem secreta para o Coração do Mundo, onde percebe que a verdadeira magia está nas lições aprendidas durante a aventura.</p>
+        </div>
+
+        <div id="subcaminho2A" class="page" style="display:none;">
+            <h3>Caminho B: Caverna dos Ecos</h3>
+            <p>Dora entra em uma caverna onde os ecos revelam pistas sobre a localização do Coração do Mundo. Ela deve resolver enigmas e interpretar os ecos corretamente:</p>
+            <button onclick="showPage('enigmaEcos')">O Enigma das Vozes</button>
+            <button onclick="showPage('testeSombras')">O Teste das Sombras</button>
+        </div>
+
+        <div id="enigmaEcos" class="page" style="display:none;">
+            <h4>O Enigma das Vozes</h4>
+            <p>Os ecos na caverna fornecem pistas que levam Dora a uma sala secreta onde está o Coração do Mundo. Com o artefato, ela descobre que a verdadeira magia está nas amizades e nas experiências vividas ao longo da jornada.</p>
+        </div>
+
+        <div id="testeSombras" class="page" style="display:none;">
+            <h4>O Teste das Sombras</h4>
+            <p>A caverna contém sombras que representam desafios passados de Dora. Ao enfrentar e superar essas sombras, ela encontra o Coração do Mundo e percebe que a verdadeira sabedoria vem do crescimento pessoal e das aventuras vividas.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
